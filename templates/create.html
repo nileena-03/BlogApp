@@ -1,9 +1,16 @@
 <h1>LIST BLOGS</h1>
-<form method="post">
+<!-- <form method="post">
         {% csrf_token %}
     <label>Title:</label><br>
     <input type="text" name="title" required><br><br>
     <label>Content</label><br>
     <textarea name="content"></textarea><br><br>
     <button type="submit">Save</button>
+</form> -->
+
+<form method="post">
+    {% csrf_token %}
+    {{ frm.as_p }}
+    <button type="submit">SAVE</button>
 </form>
+
